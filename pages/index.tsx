@@ -34,6 +34,7 @@ export default function Home() {
         { link }
       );
       setStatus('success');
+      form.setFieldsValue({ link: '' });
       setMessage(response.data?.short_link);
     } catch (e) {
       const error = e as AxiosError<ShortenLinkError>;

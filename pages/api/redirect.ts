@@ -13,5 +13,5 @@ export default async (req, res) => {
     return res.redirect(301, entry.link);
   }
 
-  return res.redict(301, '/');
+  return res.redirect(301, '/');
 };
